@@ -1,0 +1,16 @@
+_format_version: "3.0"
+
+services:
+  - name: service-a
+    url: http://service-a:3001
+    routes:
+      - name: route-a
+        paths:
+          - /users
+
+  - name: service-b
+    url: http://service-b:3002
+    routes:
+      - name: route-b
+        paths:
+          - /products
